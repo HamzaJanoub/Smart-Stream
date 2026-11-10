@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>IP-TV</title>
+</head>
+<body class="bg-gray-800">
+    <div class="grid grid-cols-3 gap-3  m-3">
+
+        <div class=" col-span-1 flex flex-col gap-4">
+            <div class="flex items-center gap-2">
+                <div class="flex items-center gap-1 ring ring-gray-800 hover:ring-cyan-200 rounded-xl p-1 shadow-md transition duration-200 h shadow-cyan-300 w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#999999"><path d="M19.6,21l-6.3-6.3q-0.75,0.6-1.72,0.95T9.5,16q-2.72,0-4.61-1.89Q3,12.23 3,9.5Q3,6.77 4.89,4.89T9.5,3t4.61,1.89T16,9.5q0,1.1-0.35,2.07T14.7,13.3L21,19.6L19.6,21ZM9.5,14q1.88,0 3.19-1.31T14,9.5T12.69,6.31T9.5,5T6.31,6.31T5,9.5t1.31,3.19T9.5,14Z"/></svg>
+                    <input type="text" placeholder="search chanel..." class=" outline-none p-2 text-cyan-50 w-full  rounded-xl h-10 ">
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#999999"><path d="M10.86,18.17L20.03,3.33l9.17,14.83H10.86Zm18.47,18.5q-3.1,0-5.22-2.12T22,29.33t2.12-5.22T29.33,22t5.22,2.12t2.12,5.22t-2.12,5.22t-5.22,2.12ZM5,35.69V22.81H17.89V35.69H5Zm24.34-1.81q1.91,0 3.23-1.32t1.32-3.24T32.57,26.1t-3.24-1.32T26.1,26.1t-1.32,3.24t1.32,3.23t3.24,1.32ZM7.78,32.92h7.33V25.58H7.78v7.33Zm8.06-17.53h8.39L20.03,8.61l-4.19,6.78Zm4.19,0ZM15.11,25.58Zm14.22,3.75Z"/></svg>
+                <select name="categories" id="categorie">
+                    <option value="">Sport</option>
+                    <option value="">documentaires</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+                            
+
+            </div>
+            
+                <div class=" bg-transparent rounded-md w-full tracking-widest flex flex-col gap-3 h-200 overflow-y-auto costum-scroll">
+
+                    <div class="bg-gray-950  transition duration-200 rounded-2xl text-xl hover:-translate-y-1 shadow-xl hover:shadow-cyan-700 p-2 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#77cee4"><path d="M15.92,25.56l11.31-7.22L15.92,11.11V25.56ZM13.61,35V31.67H6.11q-1.12,0-1.95-0.83T3.33,28.89V7.78q0-1.12 0.83-1.95T6.11,5H33.89q1.12,0 1.95,0.83t0.83,1.95V28.89q0,1.12-0.83,1.95t-1.95,0.83h-7.5V35H13.61Zm-7.5-6.11H33.89V7.78H6.11V28.89Zm0,0V7.78V28.89Z"/></svg> 
+                        <h1 class="text-cyan-200 p-3  ">Favorite </h1>
+                    </div>
+                    <div class="bg-gray-950  transition duration-200 rounded-2xl text-xl hover:-translate-y-1 shadow-xl hover:shadow-cyan-700 p-2 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#77cee4"><path d="M15.92,25.56l11.31-7.22L15.92,11.11V25.56ZM13.61,35V31.67H6.11q-1.12,0-1.95-0.83T3.33,28.89V7.78q0-1.12 0.83-1.95T6.11,5H33.89q1.12,0 1.95,0.83t0.83,1.95V28.89q0,1.12-0.83,1.95t-1.95,0.83h-7.5V35H13.61Zm-7.5-6.11H33.89V7.78H6.11V28.89Zm0,0V7.78V28.89Z"/></svg> 
+                    <h1 class="text-cyan-200 p-3">UK-KIDS</h1>
+                    </div>
+                                        <div class="bg-gray-950  transition duration-200 rounded-2xl text-xl hover:-translate-y-1 shadow-xl hover:shadow-cyan-700 p-2 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#77cee4"><path d="M15.92,25.56l11.31-7.22L15.92,11.11V25.56ZM13.61,35V31.67H6.11q-1.12,0-1.95-0.83T3.33,28.89V7.78q0-1.12 0.83-1.95T6.11,5H33.89q1.12,0 1.95,0.83t0.83,1.95V28.89q0,1.12-0.83,1.95t-1.95,0.83h-7.5V35H13.61Zm-7.5-6.11H33.89V7.78H6.11V28.89Zm0,0V7.78V28.89Z"/></svg> 
+                    <h1 class="text-cyan-200 p-3">UK-KIDS</h1>
+                    </div>
+                                        <div class="bg-gray-950  transition duration-200 rounded-2xl text-xl hover:-translate-y-1 shadow-xl hover:shadow-cyan-700 p-2 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#77cee4"><path d="M15.92,25.56l11.31-7.22L15.92,11.11V25.56ZM13.61,35V31.67H6.11q-1.12,0-1.95-0.83T3.33,28.89V7.78q0-1.12 0.83-1.95T6.11,5H33.89q1.12,0 1.95,0.83t0.83,1.95V28.89q0,1.12-0.83,1.95t-1.95,0.83h-7.5V35H13.61Zm-7.5-6.11H33.89V7.78H6.11V28.89Zm0,0V7.78V28.89Z"/></svg> 
+                    <h1 class="text-cyan-200 p-3">UK-KIDS</h1>
+                    </div>
+                                        <div class="bg-gray-950  transition duration-200 rounded-2xl text-xl hover:-translate-y-1 shadow-xl hover:shadow-cyan-700 p-2 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#77cee4"><path d="M15.92,25.56l11.31-7.22L15.92,11.11V25.56ZM13.61,35V31.67H6.11q-1.12,0-1.95-0.83T3.33,28.89V7.78q0-1.12 0.83-1.95T6.11,5H33.89q1.12,0 1.95,0.83t0.83,1.95V28.89q0,1.12-0.83,1.95t-1.95,0.83h-7.5V35H13.61Zm-7.5-6.11H33.89V7.78H6.11V28.89Zm0,0V7.78V28.89Z"/></svg> 
+                    <h1 class="text-cyan-200 p-3">UK-KIDS</h1>
+                    </div>
+                   <div class="bg-gray-950  transition duration-200 rounded-2xl text-xl hover:-translate-y-1 shadow-xl hover:shadow-cyan-700 p-2 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#77cee4"><path d="M15.92,25.56l11.31-7.22L15.92,11.11V25.56ZM13.61,35V31.67H6.11q-1.12,0-1.95-0.83T3.33,28.89V7.78q0-1.12 0.83-1.95T6.11,5H33.89q1.12,0 1.95,0.83t0.83,1.95V28.89q0,1.12-0.83,1.95t-1.95,0.83h-7.5V35H13.61Zm-7.5-6.11H33.89V7.78H6.11V28.89Zm0,0V7.78V28.89Z"/></svg> 
+                    <h1 class="text-cyan-200 p-3">UK-KIDS</h1>
+                    </div>
+                    <div class="bg-gray-950  transition duration-200 rounded-2xl text-xl hover:-translate-y-1 shadow-xl hover:shadow-cyan-700 p-2 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#77cee4"><path d="M15.92,25.56l11.31-7.22L15.92,11.11V25.56ZM13.61,35V31.67H6.11q-1.12,0-1.95-0.83T3.33,28.89V7.78q0-1.12 0.83-1.95T6.11,5H33.89q1.12,0 1.95,0.83t0.83,1.95V28.89q0,1.12-0.83,1.95t-1.95,0.83h-7.5V35H13.61Zm-7.5-6.11H33.89V7.78H6.11V28.89Zm0,0V7.78V28.89Z"/></svg> 
+                    <h1 class="text-cyan-200 p-3">UK-KIDS</h1>
+                    </div>
+                    <div class="bg-gray-950  transition duration-200 rounded-2xl text-xl hover:-translate-y-1 shadow-xl hover:shadow-cyan-700 p-2 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#77cee4"><path d="M15.92,25.56l11.31-7.22L15.92,11.11V25.56ZM13.61,35V31.67H6.11q-1.12,0-1.95-0.83T3.33,28.89V7.78q0-1.12 0.83-1.95T6.11,5H33.89q1.12,0 1.95,0.83t0.83,1.95V28.89q0,1.12-0.83,1.95t-1.95,0.83h-7.5V35H13.61Zm-7.5-6.11H33.89V7.78H6.11V28.89Zm0,0V7.78V28.89Z"/></svg> 
+                    <h1 class="text-cyan-200 p-3">UK-KIDS</h1>
+                    </div>
+                    <div class="bg-gray-950  transition duration-200 rounded-2xl text-xl hover:-translate-y-1 shadow-xl hover:shadow-cyan-700 p-2 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#77cee4"><path d="M15.92,25.56l11.31-7.22L15.92,11.11V25.56ZM13.61,35V31.67H6.11q-1.12,0-1.95-0.83T3.33,28.89V7.78q0-1.12 0.83-1.95T6.11,5H33.89q1.12,0 1.95,0.83t0.83,1.95V28.89q0,1.12-0.83,1.95t-1.95,0.83h-7.5V35H13.61Zm-7.5-6.11H33.89V7.78H6.11V28.89Zm0,0V7.78V28.89Z"/></svg> 
+                    <h1 class="text-cyan-200 p-3">UK-KIDS</h1>
+                    </div>
+                    <div class="bg-gray-950  transition duration-200 rounded-2xl text-xl hover:-translate-y-1 shadow-xl hover:shadow-cyan-700 p-2 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#77cee4"><path d="M15.92,25.56l11.31-7.22L15.92,11.11V25.56ZM13.61,35V31.67H6.11q-1.12,0-1.95-0.83T3.33,28.89V7.78q0-1.12 0.83-1.95T6.11,5H33.89q1.12,0 1.95,0.83t0.83,1.95V28.89q0,1.12-0.83,1.95t-1.95,0.83h-7.5V35H13.61Zm-7.5-6.11H33.89V7.78H6.11V28.89Zm0,0V7.78V28.89Z"/></svg> 
+                    <h1 class="text-cyan-200 p-3">UK-KIDS</h1>
+                    </div>
+                    <div class="bg-gray-950  transition duration-200 rounded-2xl text-xl hover:-translate-y-1 shadow-xl hover:shadow-cyan-700 p-2 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#77cee4"><path d="M15.92,25.56l11.31-7.22L15.92,11.11V25.56ZM13.61,35V31.67H6.11q-1.12,0-1.95-0.83T3.33,28.89V7.78q0-1.12 0.83-1.95T6.11,5H33.89q1.12,0 1.95,0.83t0.83,1.95V28.89q0,1.12-0.83,1.95t-1.95,0.83h-7.5V35H13.61Zm-7.5-6.11H33.89V7.78H6.11V28.89Zm0,0V7.78V28.89Z"/></svg> 
+                    <h1 class="text-cyan-200 p-3">UK-KIDS</h1>
+                    </div>
+                    <div class="bg-gray-950  transition duration-200 rounded-2xl text-xl hover:-translate-y-1 shadow-xl hover:shadow-cyan-700 p-2 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#77cee4"><path d="M15.92,25.56l11.31-7.22L15.92,11.11V25.56ZM13.61,35V31.67H6.11q-1.12,0-1.95-0.83T3.33,28.89V7.78q0-1.12 0.83-1.95T6.11,5H33.89q1.12,0 1.95,0.83t0.83,1.95V28.89q0,1.12-0.83,1.95t-1.95,0.83h-7.5V35H13.61Zm-7.5-6.11H33.89V7.78H6.11V28.89Zm0,0V7.78V28.89Z"/></svg> 
+                    <h1 class="text-cyan-200 p-3">UK-KIDS</h1>
+                    </div>
+                    <div class="bg-gray-950  transition duration-200 rounded-2xl text-xl hover:-translate-y-1 shadow-xl hover:shadow-cyan-700 p-2 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#77cee4"><path d="M15.92,25.56l11.31-7.22L15.92,11.11V25.56ZM13.61,35V31.67H6.11q-1.12,0-1.95-0.83T3.33,28.89V7.78q0-1.12 0.83-1.95T6.11,5H33.89q1.12,0 1.95,0.83t0.83,1.95V28.89q0,1.12-0.83,1.95t-1.95,0.83h-7.5V35H13.61Zm-7.5-6.11H33.89V7.78H6.11V28.89Zm0,0V7.78V28.89Z"/></svg> 
+                    <h1 class="text-cyan-200 p-3">UK-KIDS</h1>
+                    </div>
+                    <div class="bg-gray-950  transition duration-200 rounded-2xl text-xl hover:-translate-y-1 shadow-xl hover:shadow-cyan-700 p-2 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#77cee4"><path d="M15.92,25.56l11.31-7.22L15.92,11.11V25.56ZM13.61,35V31.67H6.11q-1.12,0-1.95-0.83T3.33,28.89V7.78q0-1.12 0.83-1.95T6.11,5H33.89q1.12,0 1.95,0.83t0.83,1.95V28.89q0,1.12-0.83,1.95t-1.95,0.83h-7.5V35H13.61Zm-7.5-6.11H33.89V7.78H6.11V28.89Zm0,0V7.78V28.89Z"/></svg> 
+                    <h1 class="text-cyan-200 p-3">UK-KIDS</h1>
+                    </div>
+                    <div class="bg-gray-950  transition duration-200 rounded-2xl text-xl hover:-translate-y-1 shadow-xl hover:shadow-cyan-700 p-2 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#77cee4"><path d="M15.92,25.56l11.31-7.22L15.92,11.11V25.56ZM13.61,35V31.67H6.11q-1.12,0-1.95-0.83T3.33,28.89V7.78q0-1.12 0.83-1.95T6.11,5H33.89q1.12,0 1.95,0.83t0.83,1.95V28.89q0,1.12-0.83,1.95t-1.95,0.83h-7.5V35H13.61Zm-7.5-6.11H33.89V7.78H6.11V28.89Zm0,0V7.78V28.89Z"/></svg> 
+                    <h1 class="text-cyan-200 p-3">UK-KIDS</h1>
+                    </div>
+                    <div class="bg-gray-950  transition duration-200 rounded-2xl text-xl hover:-translate-y-1 shadow-xl hover:shadow-cyan-700 p-2 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#77cee4"><path d="M15.92,25.56l11.31-7.22L15.92,11.11V25.56ZM13.61,35V31.67H6.11q-1.12,0-1.95-0.83T3.33,28.89V7.78q0-1.12 0.83-1.95T6.11,5H33.89q1.12,0 1.95,0.83t0.83,1.95V28.89q0,1.12-0.83,1.95t-1.95,0.83h-7.5V35H13.61Zm-7.5-6.11H33.89V7.78H6.11V28.89Zm0,0V7.78V28.89Z"/></svg> 
+                    <h1 class="text-cyan-200 p-3">UK-KIDS</h1>
+                    </div>
+                    <div class="bg-gray-950  transition duration-200 rounded-2xl text-xl hover:-translate-y-1 shadow-xl hover:shadow-cyan-700 p-2 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#77cee4"><path d="M15.92,25.56l11.31-7.22L15.92,11.11V25.56ZM13.61,35V31.67H6.11q-1.12,0-1.95-0.83T3.33,28.89V7.78q0-1.12 0.83-1.95T6.11,5H33.89q1.12,0 1.95,0.83t0.83,1.95V28.89q0,1.12-0.83,1.95t-1.95,0.83h-7.5V35H13.61Zm-7.5-6.11H33.89V7.78H6.11V28.89Zm0,0V7.78V28.89Z"/></svg> 
+                    <h1 class="text-cyan-200 p-3">UK-KIDS</h1>
+                    </div>
+                    <div class="bg-gray-950  transition duration-200 rounded-2xl text-xl hover:-translate-y-1 shadow-xl hover:shadow-cyan-700 p-2 flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#77cee4"><path d="M15.92,25.56l11.31-7.22L15.92,11.11V25.56ZM13.61,35V31.67H6.11q-1.12,0-1.95-0.83T3.33,28.89V7.78q0-1.12 0.83-1.95T6.11,5H33.89q1.12,0 1.95,0.83t0.83,1.95V28.89q0,1.12-0.83,1.95t-1.95,0.83h-7.5V35H13.61Zm-7.5-6.11H33.89V7.78H6.11V28.89Zm0,0V7.78V28.89Z"/></svg> 
+                    <h1 class="text-cyan-200 p-3">UK-KIDS</h1>
+                    </div>
+
+
+                </div>
+
+
+        </div>
+                <!-- <div class="col-span-1 flex flex-col bg-gray-950 rounded-md w-full  tracking-widest">
+                    
+                    <h1 class="text-cyan-200 p-3 ring-1 ring-gray-900  hover:ring-cyan-200  transition duration-300 rounded-md m-1 shadow-md hover:shadow-cyan-200">002 - 2M Maroc - 12345</h1>
+                    <h1 class="text-cyan-200 p-3 ring-1 ring-gray-900  hover:ring-cyan-200  transition duration-300 rounded-md m-1 shadow-md hover:shadow-cyan-200">002 - 2M Maroc - 12345</h1>
+                    <h1 class="text-cyan-200 p-3 ring-1 ring-gray-900  hover:ring-cyan-200  transition duration-300 rounded-md m-1 shadow-md hover:shadow-cyan-200">002 - 2M Maroc - 12345</h1>
+                    <h1 class="text-cyan-200 p-3 ring-1 ring-gray-900  hover:ring-cyan-200  transition duration-300 rounded-md m-1 shadow-md hover:shadow-cyan-200">002 - 2M Maroc - 12345</h1>
+                    <h1 class="text-cyan-200 p-3 ring-1 ring-gray-900  hover:ring-cyan-200  transition duration-300 rounded-md m-1 shadow-md hover:shadow-cyan-200">002 - 2M Maroc - 12345</h1>
+                    <h1 class="text-cyan-200 p-3 ring-1 ring-gray-900  hover:ring-cyan-200  transition duration-300 rounded-md m-1 shadow-md hover:shadow-cyan-200">002 - 2M Maroc - 12345</h1>
+                    <h1 class="text-cyan-200 p-3 ring-1 ring-gray-900  hover:ring-cyan-200  transition duration-300 rounded-md m-1 shadow-md hover:shadow-cyan-200">002 - 2M Maroc - 12345</h1>
+                    <h1 class="text-cyan-200 p-3 ring-1 ring-gray-900  hover:ring-cyan-200  transition duration-300 rounded-md m-1 shadow-md hover:shadow-cyan-200">002 - 2M Maroc - 12345</h1>
+                    <h1 class="text-cyan-200 p-3 ring-1 ring-gray-900  hover:ring-cyan-200  transition duration-300 rounded-md m-1 shadow-md hover:shadow-cyan-200">002 - 2M Maroc - 12345</h1>
+                    <h1 class="text-cyan-200 p-3 ring-1 ring-gray-900  hover:ring-cyan-200  transition duration-300 rounded-md m-1 shadow-md hover:shadow-cyan-200">002 - 2M Maroc - 12345</h1>
+                    <h1 class="text-cyan-200 p-3 ring-1 ring-gray-900  hover:ring-cyan-200  transition duration-300 rounded-md m-1 shadow-md hover:shadow-cyan-200">002 - 2M Maroc - 12345</h1>
+                    <h1 class="text-cyan-200 p-3 ring-1 ring-gray-900  hover:ring-cyan-200  transition duration-300 rounded-md m-1 shadow-md hover:shadow-cyan-200">002 - 2M Maroc - 12345</h1>
+                    <h1 class="text-cyan-200 p-3 ring-1 ring-gray-900  hover:ring-cyan-200  transition duration-300 rounded-md m-1 shadow-md hover:shadow-cyan-200">002 - 2M Maroc - 12345</h1>
+                </div> -->
+                <div class="col-span-2 bg-gray-950 rounded-md p-2 flex flex-col items-center">
+                    <div class=" bg-gray-300 w-full h-140 rounded-2xl m-2 ">
+
+                    </div>
+
+                        <div class="w-full h-70 overflow-y-auto mt-1">
+                    
+                            <h1 class="text-cyan-200 p-2 text-2xl font-bold">20:30 - 21:30   modawala - Al maghribia </h1>
+                            <p class=" text-gray-400 p-2 font-semibold ">Découvrez le monde à travers des documentaires fascinants sur la nature, la science, les animaux et les grandes aventures.</p>
+                            <h1 class="text-amber-300 p-2 text-2xl font-bold">20:30 - 21:30   modawala - Al maghribia </h1>
+                            <p class=" text-gray-400 p-2">Découvrez le monde à travers des documentaires fascinants sur la nature, la science, les animaux et les grandes aventures.</p>
+                            <h1 class="text-cyan-200 p-2 text-2xl font-bold">20:30 - 21:30   modawala - Al maghribia </h1>
+                            <p class=" text-gray-400 p-2">Découvrez le monde à travers des documentaires fascinants sur la nature, la science, les animaux et les grandes aventures.</p>
+                            <h1 class="text-cyan-200 p-2 text-2xl font-bold">20:30 - 21:30   modawala - Al maghribia </h1>
+                            <p class=" text-gray-400 p-2">Découvrez le monde à travers des documentaires fascinants sur la nature, la science, les animaux et les grandes aventures.</p>
+                            <h1 class="text-cyan-200 p-2 text-2xl font-bold">20:30 - 21:30   modawala - Al maghribia </h1>
+                            <p class=" text-gray-400 p-2">Découvrez le monde à travers des documentaires fascinants sur la nature, la science, les animaux et les grandes aventures.</p>
+                            <h1 class="text-cyan-200 p-2 text-2xl font-bold">20:30 - 21:30   modawala - Al maghribia </h1>
+                            <p class=" text-gray-400 p-2">Découvrez le monde à travers des documentaires fascinants sur la nature, la science, les animaux et les grandes aventures.</p>
+                            <h1 class="text-cyan-200 p-2 text-2xl font-bold">20:30 - 21:30   modawala - Al maghribia </h1>
+                            <p class=" text-gray-400 p-2">Découvrez le monde à travers des documentaires fascinants sur la nature, la science, les animaux et les grandes aventures.</p>
+    
+                        </div>
+                    
+                </div>
+    </div>
+<script type="module" src="./js/app.js"></script>
+</body>
+</html>
