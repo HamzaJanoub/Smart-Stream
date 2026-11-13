@@ -3,5 +3,6 @@ export function loadVideoStreaming(data){
     video.src = data
     video.addEventListener('loadedmetadata',()=>{
         video.play()
+        
     })
 }

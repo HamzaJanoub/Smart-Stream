@@ -7,28 +7,40 @@
         <link rel="icon" type="image/svg+xml" href="data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'><path d='M85 32C92 45 84 68 62 79C40 90 16 84 11 70C8 61 14 48 25 38' stroke='%23f97316' stroke-width='10' stroke-linecap='round'/><path d='M38 28L72 48C74.5 49.5 74.5 53 72 54.5L38 74.5C35.5 76 32 74.2 32 71.2V31.2C32 28.2 35.5 26.5 38 28Z' fill='%23f97316'/></svg>">
         <title>Smart-Streem</title>
     </head>
-    <body class="bg-slate-950 text-slate-100 min-h_screen">
-        <header class="bg-slate-900 border-b border-slate-800 px-6 py-4">
-        
-            <div class="flex justify-between items-center">
-        
-                <div class="flex items-center gap-3">
-        <svg class="w-20 h-20 transition-transform duration-300 group-hover:scale-105" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M85 32C92 45 84 68 62 79C40 90 16 84 11 70C8 61 14 48 25 38" stroke="#f97316" stroke-width="7" stroke-linecap="round"/> <path d="M78 36C83 46 77 63 60 72C48 78 35 79 26 75" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/> <path d="M38 28L72 48C74.5 49.5 74.5 53 72 54.5L38 74.5C35.5 76 32 74.2 32 71.2V31.2C32 28.2 35.5 26.5 38 28Z" fill="#f97316"/>
-            </svg>
-        
-                    <h1 class="text-white text-4xl font-bold">
-                        Smart
-                    </h1><span class="text-orange-500 text-xl font-semibold">Stream</span>
-                </div>
-        
-                <div class="flex items-center gap-2">
-                    <span class="w-4 h-4 bg-green-500 rounded-full"></span>
-                    <p class="text-slate-400 text-2xl">Live Streaming</p>
-                </div>
-        
+    <header class="bg-slate-900 border-b border-slate-800 px-6 py-4">
+    
+        <div class="flex justify-between items-center">
+    
+            <div class="flex items-center gap-3">
+    <svg class="w-20 h-20 transition-transform duration-300 group-hover:scale-105" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M85 32C92 45 84 68 62 79C40 90 16 84 11 70C8 61 14 48 25 38" stroke="#f97316" stroke-width="7" stroke-linecap="round"/> <path d="M78 36C83 46 77 63 60 72C48 78 35 79 26 75" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/> <path d="M38 28L72 48C74.5 49.5 74.5 53 72 54.5L38 74.5C35.5 76 32 74.2 32 71.2V31.2C32 28.2 35.5 26.5 38 28Z" fill="#f97316"/>
+        </svg>
+    
+                <h1 class="text-white text-4xl font-bold">
+                    Smart
+                </h1><span class="text-orange-500 text-xl font-semibold">Stream</span>
             </div>
-        </header>
+    
+            <div class="flex items-center gap-2">
+                <span class="w-4 h-4 bg-green-500 rounded-full"></span>
+                <p class="text-slate-400 text-2xl">Live Streaming</p>
+            </div>
+    
+        </div>
+    </header>
+    <div id="loading-screen" class=" fixed inset-0 z-50 flex items-center justify-center">
+        <div id="reload-page" class="absolute inset-0 bg-black/50 backdrop-blur-md"></div>
+                    <iframe class=" absolute" src="https://lottie.host/embed/a6d292b3-45d1-44ea-a15d-1bf77b1ec525/wBqpIUn7os.lottie"></iframe>
+    </div>
+
+
+
+
+
+
+    <body class="bg-slate-950 text-slate-100 min-h_screen">
+        
         <div id="back" class=" bg-black/70 fixed inset-0 z-50 hidden">
+
             <h2 class="text-2xl font-bold text-white">Categories</h2>
                         <aside id="favorite-col" class="fixed hidden z-20 top-0 left-0 bg-slate-900 border-r border-slate-700 w-120 h-screen overflow-y-auto p-4">
                             <select name="categories" id="select-categorie" class="w-full bg-slate-900 text-white border border-slate-700 rounded-xl p-3 outline-none focus:border-orange-500 text-4xl">
@@ -66,18 +78,17 @@
             
                 <h1 class="text-4xl p-3 text-white font-bold"> Channels Television </h1>
                     
-                    <div id="loading" class="hidden flex-col items-center justify-center p-6 gap-3">
-                        <div class="w-10 h-10 border-slate-700 border-t-orange-500 rounded-full animate-spin"></div>
-                            <p class="text-slate-400">Loading channels...</p>
-                    </div>
+
                     <div id="error" class="hidden bg-red-950 text-red-300 border border-red-800 rounded-xl p-4 m-2">
-                        <p class="font-bold">Something went wrong!</p>
+                        <div class="flex items-center ">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#fca5a5"><path d="M1,21L12,2L23,21H1Zm3.45-2h15.1L12,6L4.45,19Zm8.26-1.29Q13,17.43 13,17t-0.29-0.71T12,16t-0.71,0.29T11,17t0.29,0.71T12,18t0.71-0.29ZM11,15h2V10H11v5Zm1-2.5Z"/></svg>                            <p class="font-bold">- Something went wrong!</p>
+                        </div>
                         <p>Failed to load channels. Please try again.</p>
                     </div>
             
             
-                <div  id="chanels" class="text-2xl p-3 text-white font-bold overflow-y-auto scrollbar-thumb-orange-600">
-                
+   
+            <div  id="chanels" class="text-2xl p-3 text-white font-bold overflow-y-auto scrollbar-thumb-orange-600">
                 
             </div>
 
@@ -94,13 +105,15 @@
                 <video id="streaming" controls muted autoplay playsinline class=" rounded-xl w-full aspect-video bg-black border border-slate-800">
 
                 </video>
-                                            <h2 class="pl-2 text-xl font-bold text-white mb-3">Program Guide</h2>
+                     <h2 class="pl-2 text-xl font-bold text-white mb-3">Program Guide</h2>
 
                     <div id="time" class="w-full h-70 overflow-y-auto border border-slate-800 rounded-xl p-4 bg-slate-950">                                     
                     </div>
                     
                     </div>
         </div>
+
+
 <script type="module" src="./js/app.js" defer ></script>
 </body>
 
